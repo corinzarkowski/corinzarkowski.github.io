@@ -22,7 +22,7 @@ University of Washington (Seattle, WA)
 
 **Engineering Intern** (Summer 2019)  
 > At Contour, I learned to use several civil engineering programs including AutoCAD Civil3D to assist in a variety of projects, ranging from small-scale residential site plans to industrial drainage plans.
-
+  
 ### Newbook: Svoboda Diaries Research Team (Seattle, WA)
 
 **Research Intern** (2018 – 2019)  
