@@ -21,12 +21,12 @@ University of Washington (Seattle, WA)
 ### Contour Engineering (Gig Harbor, WA)
 
 **Engineering Intern** (Summer 2019)  
-At Contour, I learned to use several civil engineering programs including AutoCAD Civil3D to assist in a variety of projects, ranging from small-scale residential site plans to industrial drainage plans.
+> At Contour, I learned to use several civil engineering programs including AutoCAD Civil3D to assist in a variety of projects, ranging from small-scale residential site plans to industrial drainage plans.
 
 ### Newbook: Svoboda Diaries Research Team (Seattle, WA)
 
 **Research Intern** (2018 – 2019)  
-With Newbook: Svoboda, I worked with a team of other undergraduate researchers to first glean and clean indirect geographical data from a large assorted dataset of recovered notebooks and diaries from 18th century Iraq. We then used the obtained information to create a map of the area at the time.
+> With Newbook: Svoboda, I worked with a team of other undergraduate researchers to first glean and clean indirect geographical data from a large assorted dataset of recovered notebooks and diaries from 18th century Iraq. We then used the obtained information to create a map of the area at the time.
 
 ---
 
