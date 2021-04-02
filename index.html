@@ -6,133 +6,276 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>CZ</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- Third party plugin CSS-->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+        <style>
+          a {
+            color: black;
+            text-decoration: none; /* no underline */
+          }
+
+          .title {
+            position: fixed;
+            min-left: 10%;
+
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 700;
+            font-size: 3vw;
+            padding: 15%;
+
+            text-align: center;
+            cursor: default;
+            white-space: nowrap;
+          }
+
+          .menu-options {
+            width: 10%;
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 400;
+            font-size: 1vw;
+            cursor: pointer;
+
+            padding: 1%;
+            margin: 1%;
+
+            border: 1px solid black;
+
+            text-align: center;
+
+            position: fixed;
+            top: 45%;
+
+            transition: opacity .3s;
+          }
+
+          .back-options {
+            width: 10%;
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 400;
+            font-size: 1vw;
+            cursor: pointer;
+
+            padding: 1%;
+            margin: 1%;
+
+            border: 1px solid black;
+
+            text-align: center;
+
+            position: fixed;
+            top: 45%;
+
+            transition: opacity .3s;
+
+            background-color: white;
+          }
+
+          .menu-options:hover {
+            opacity: 50%;
+          }
+
+          .back-options:hover {
+            opacity: 50%;
+          }
+
+          .about-me-text {
+            width: 40%;
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 400;
+            font-size: 1vw;
+            cursor: default;
+
+            padding: 1%;
+            margin: 1%;
+
+            text-align: center;
+
+            position: fixed;
+            top: 40%;
+          }
+
+          .project-tile {
+            width: 33%;
+            height: 100%;
+            position: fixed;
+            top: 100%;
+
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 7%;
+
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 700;
+            font-size: 1.5vw;
+            color: black;
+          }
+
+          .project-img {
+            filter: blur(4px);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            opacity: 0%;
+          }
+
+          .project-desc {
+            width: 70%;
+            margin: 10% 10%;
+            padding: 5% 5%;
+
+
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 400;
+            font-size: 1vw;
+            opacity: 0%;
+            cursor: default;
+
+            z-index: 1;
+          }
+
+          .project-tilebg {
+            padding-top: 15%;
+            padding-left: 5%;
+            padding-right: 5%;
+
+            background-color:white;
+          }
+
+        </style>
     </head>
+
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="./resume.html">My Resume</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projecttext">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-10 align-self-end">
-                        <h1 class="text-uppercase text-white font-weight-bold">CORIN ZARKOWSKI</h1>
-                        <hr class="divider my-4" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 font-weight-light mb-5">My Portfolio</p>
-                        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#projecttext">My Projects</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">About Me</h2>
-                        <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">Hi, my name is Corin Zarkowski and I am currently a third year Geography: Data Science major with a minor in Informatics. Some of of my passions and hobbies outside of academics include skiing, hiking, and photography.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Project Text-->
-        <section class="page-section bg-secondary" id="projecttext">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="text-white mt-0">My Projects</h2>
-                        <hr class="divider light my-4" />
-                        <p class="text-white-50 mb-4">Throughout my time at the University of Washington, I have set out to accomplish several personal projects, as well as some related to classwork. A sample can be found below.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/urbexmap.png">
-                            <img class="img-fluid" src="assets/img/portfolio/urbexmap.png" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">A map of hidden photography spots spanning the entire Pacific Northwest</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/dorms.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/dorms.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">A complete functional redesign of the UW student housing website</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/hongkong.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/hongkong.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">An interactive website showcasing the horrors of the 2019-20 Hong Kong Protests</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+      <!-- MAIN PAGE -->
+      <div id="main-page-items">
+        <div id="name" class="title" style="left: 21.5%;">Corin Zarkowski</div>
+
+        <div id="menu-options">
+          <div id="resume" class="menu-options" style="left: 27%">resume</div>
+          <div id="about" class="menu-options" style="left: 43%">about me</div>
+          <div id="projects" class="menu-options" style="left: 59%">projects</div>
         </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Contact</h2>
-                        <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Ready to start your next project with me? Give me a call or send me an email anytime!</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>+1 (206) 719-4525</div>
-                    </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                        <a class="d-block" href="mailto:zarkoc@uw.edu">zarkoc@uw.edu</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Bootstrap core JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+
+      </div>
+
+      <!-- ABOUT ME -->
+      <div id="about-me-items">
+        <div id="about-me-title" class="title" style="right: 130%">About me</div>
+
+        <div id="about-me-text" class="about-me-text" style="right: 130%">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+        <div id="about-me-back" class="back-options" style="right: 145%; top: 70%">back</div>
+
+      </div>
+
+      <div id="projects-items">
+
+        <div id="project-urbex" class="project-tile" style="left: 0%">
+          Urban Exploration Map
+          <img src="images/urbexmap.png" class="project-img">
+          <div class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div id="project-ski" class="project-tile" style="left: 33%">
+          Ski Area Map
+          <img src="images/ski.jpg" class="project-img">
+          <div class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div id="project-csgo" class="project-tile" style="right: 0%">
+          Counter-Strike Strategy Planner
+          <img src="images/csgo.png" class="project-img">
+          <div class="project-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+
+        <div id="projects-back" class="back-options" style="left: 43%; top: 180%">back</div>
+      </div>
+
+      <a href="https://www.linkedin.com/in/corin-zarkowski/" style="position: fixed; left: 2%; bottom: 3%; width: 2%;">
+        <img src="images/linkedinglogo.png" style="position: fixed; left: 2%; bottom: 3%; width: 2%;">
+      </a>
+
+      <script>
+        $(".menu-options, .back-options").on("click", function(event) {
+          if(event.target.id === "about" || event.target.id === "resume" || event.target.id === "projects") {
+            $(".menu-options, #name").animate({
+              left: "+=100%"
+            }, 500);
+          }
+          console.log(event.target.id)
+          if(event.target.id === "about-me-back") {
+            $("#about, #resume, #projects, #name").animate({
+              left: "-=100%"
+            }, 500);
+
+            $("#about-me-title, #about-me-text").animate({
+              right: "+=100%"
+            }, 500);
+
+            $("#about-me-back").animate({
+              right: "+=100%"
+            }, 500);
+          }
+
+          if(event.target.id === "projects-back") {
+            $("#about, #resume, #projects, #name").animate({
+              left: "-=100%"
+            }, 500);
+
+            $("#projects-title, #projects-back, .project-tile").animate({
+              top: "+=100%"
+            }, 500);
+          }
+
+          if(event.target.id === "about") {
+            $("#about-me-title, #about-me-text, #about-me-back").animate({
+              right: "-=100%"
+            }, 500);
+          }
+
+          if(event.target.id === "projects") {
+            $("#projects-title, #projects-back, .project-tile").animate({
+              top: "-=100%"
+            }, 500);
+          }
+
+
+        })
+
+        $(".project-tile").on("mouseenter", function(event) {
+          console.log(event);
+          $(this).children('img').animate({
+            opacity: "+=100%"
+          }, 200);
+
+          $(this).children('div').animate({
+            opacity: "+=100%"
+          }, 200);
+        })
+
+        $(".project-tile").on("mouseleave", function(event) {
+          $(this).children('img').animate({
+            opacity: "-=100%"
+          }, 200);
+
+          $(this).children('div').animate({
+            opacity: "-=100%"
+          }, 200);
+        })
+      </script>
+
     </body>
+
 </html>
