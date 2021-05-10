@@ -213,7 +213,7 @@
           window.open("./resume.html", '_blank');
         })
 
-        $(".menu-options, .back-options").on("click", function(event) {
+        $("#about, #projects, #name, .back-options").on("click", function(event) {
           if(event.target.id === "about" || event.target.id === "resume" || event.target.id === "projects") {
             $(".menu-options, #name").animate({
               left: "+=100%"
