@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>CZ</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <title>corin's corner</title>
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+        <link rel="icon" type="image/png" href="/images/favicon.png">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <script src="js/jquery.js"></script>
@@ -110,6 +111,7 @@
             font-weight: 700;
             font-size: 1.5vw;
             color: black;
+            cursor: pointer;
           }
 
           .project-img {
@@ -134,7 +136,7 @@
             font-weight: 400;
             font-size: 1vw;
             opacity: 0%;
-            cursor: default;
+            cursor: pointer;
 
             z-index: 1;
           }
@@ -208,11 +210,25 @@
       </a>
 
       <script>
-
+        // RESUME LINK LISTENER
         $("#resume").on("click", function() {
           window.open("./resume.html", '_blank');
         })
 
+        // PROJECT LINK LISTENERS
+        $("#project-urbex").on("click", function() {
+          window.open("https://github.com/corinzarkowski/urbex_map", '_blank');
+        })
+
+        $("#project-ski").on("click", function() {
+          window.open("https://corinzarkowski.github.io/ski-mapping/", '_blank');
+        })
+
+        $("#project-nfl").on("click", function() {
+          window.open("https://github.com/corinzarkowski/nfl-draft-value-position", '_blank');
+        })
+
+        // SITE NAV LISTENERS
         $("#about, #projects, #name, .back-options").on("click", function(event) {
           if(event.target.id === "about" || event.target.id === "resume" || event.target.id === "projects") {
             $(".menu-options, #name").animate({

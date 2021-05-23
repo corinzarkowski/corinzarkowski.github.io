@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><g transform="matrix(2.5,0,0,2.5,12.344993591308594,0.9300098419189453)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="400" height="400"><svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+	<title>favicon</title>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<path id="C " fill="#000000" aria-label="C" d="M171.14 83.03Q135.84 83.03 115.33 106.61Q94.97 130.05 94.97 170.92Q94.97 212.96 114.6 235.96Q134.38 258.81 170.85 258.81Q193.26 258.81 221.97 250.75L221.97 272.58Q199.71 280.93 167.04 280.93Q119.73 280.93 93.95 252.22Q68.31 223.51 68.31 170.63Q68.31 137.52 80.62 112.62Q93.07 87.72 116.36 74.24Q139.79 60.76 171.44 60.76Q205.13 60.76 230.32 73.07L219.78 94.46Q195.46 83.03 171.14 83.03Z"></path>
+	<path id="Z " fill="#000000" aria-label="Z" d="M315.23 315.44L315.23 338L168.01 338L168.01 318.52L281.68 146.25L171.53 146.25L171.53 123.84L312.01 123.84L312.01 143.32L198.33 315.44L315.23 315.44Z"></path>
+</svg></svg></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><rect width="1000" height="1000" rx="500" ry="500" fill="#eeeeee"></rect><g transform="matrix(2,0,0,2,108.22999572753906,100.6200065612793)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="400" height="400"><svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+	<title>favicon</title>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<path id="C " fill="#000000" aria-label="C" d="M171.14 83.03Q135.84 83.03 115.33 106.61Q94.97 130.05 94.97 170.92Q94.97 212.96 114.6 235.96Q134.38 258.81 170.85 258.81Q193.26 258.81 221.97 250.75L221.97 272.58Q199.71 280.93 167.04 280.93Q119.73 280.93 93.95 252.22Q68.31 223.51 68.31 170.63Q68.31 137.52 80.62 112.62Q93.07 87.72 116.36 74.24Q139.79 60.76 171.44 60.76Q205.13 60.76 230.32 73.07L219.78 94.46Q195.46 83.03 171.14 83.03Z"></path>
+	<path id="Z " fill="#000000" aria-label="Z" d="M315.23 315.44L315.23 338L168.01 338L168.01 318.52L281.68 146.25L171.53 146.25L171.53 123.84L312.01 123.84L312.01 143.32L198.33 315.44L315.23 315.44Z"></path>
+</svg></svg></g></svg></g></svg>
