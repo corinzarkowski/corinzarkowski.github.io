@@ -97,6 +97,24 @@
             top: 40%;
           }
 
+          .contact-text {
+            width: 40%;
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 400;
+            font-size: 1vw;
+            cursor: default;
+
+            padding: 1%;
+            margin: 1%;
+
+            text-align: center;
+
+            position: fixed;
+            top: 65%;
+
+            z-index: -1;
+          }
+
           .project-tile {
             width: 33%;
             height: 100%;
@@ -162,6 +180,9 @@
           <div id="resume" class="menu-options" style="left: 27%">resume</div>
           <div id="about" class="menu-options" style="left: 43%">about me</div>
           <div id="projects" class="menu-options" style="left: 59%">projects</div>
+          <div id="contact" class="menu-options" style="left: 43%; top: 55%">contact info</div>
+
+          <div id="contact-text" class="contact-text" style="left: 28%; top: 55%; opacity: 0"><b>phone: </b>206 719 4525 - <b>email: </b>zarkoc@uw.edu</div>
         </div>
 
       </div>
@@ -171,10 +192,10 @@
         <div id="about-me-title" class="title" style="right: 130%">About me</div>
 
         <div id="about-me-text" class="about-me-text" style="right: 130%">
-          Hi! I am currently a student at the University of Washington-Seattle pursuing a major in GIS: Data Science, and a minor in Informatics. When not working on personal projects in coding and mapping, you can usually find me either skiing or playing videog games--two of my favorite hobbies. While I consider myself a proficient programmer and would like to pursue that further, my dream career also involves using and collecting data to solve and inquire on geographic issues.
+          Hi! I am currently a student at the University of Washington-Seattle pursuing a major in GIS: Data Science, and a minor in Informatics. When not working on personal projects in coding and mapping, you can usually find me either skiing or playing video games--two of my favorite hobbies. While I consider myself a proficient programmer and would like to pursue that further, my dream career also involves using and collecting data to solve and explore geographic issues.
         </div>
 
-        <div id="about-me-back" class="back-options" style="right: 145%; top: 70%">back</div>
+        <div id="about-me-back" class="back-options" style="right: 145%; top: 65%">back</div>
 
       </div>
 
@@ -191,7 +212,7 @@
           Ski Area Map
           <img src="images/ski.jpg" class="project-img">
           <div class="project-desc">
-            I created this map with the intent of creating a tool to assist both experienced and novice skiers in familiarizing themselves with United States ski areas and their relative distances to major cities. Tools included in the web map include sliders to adjust what ski areas are visible, based on both popularity (Wikipedia pageviews), and total vertical drop, a menu to select the basis of circle scaling between popularity and vertical, and a filter to only show cities with a given amount of ski areas in a given radius.
+            I created this map with the intent of creating a tool to assist both experienced and novice skiers in familiarizing themselves with United States ski areas and their relative distances to major cities. Tools included in the web map include sliders to adjust what ski areas are visible, based on both popularity (Wikipedia pageviews), and total vertical drop, a menu to select the basis of circle scaling between popularity and vertical, and a filter to only show cities with a given number of ski areas in a given radius.
           </div>
         </div>
         <div id="project-nfl" class="project-tile" style="right: 0%">
@@ -229,15 +250,15 @@
         })
 
         // SITE NAV LISTENERS
-        $("#about, #projects, #name, .back-options").on("click", function(event) {
+        $("#about, #projects, #name, .back-options, #contact").on("click", function(event) {
           if(event.target.id === "about" || event.target.id === "resume" || event.target.id === "projects") {
-            $(".menu-options, #name").animate({
+            $(".menu-options, #name, #contact-text").animate({
               left: "+=100%"
             }, 500);
           }
           console.log(event.target.id)
           if(event.target.id === "about-me-back") {
-            $("#about, #resume, #projects, #name").animate({
+            $("#about, #resume, #projects, #name, #contact, #contact-text").animate({
               left: "-=100%"
             }, 500);
 
@@ -251,7 +272,7 @@
           }
 
           if(event.target.id === "projects-back") {
-            $("#about, #resume, #projects, #name").animate({
+            $("#about, #resume, #projects, #name, #contact, #contact-text").animate({
               left: "-=100%"
             }, 500);
 
@@ -270,6 +291,19 @@
             $("#projects-title, #projects-back, .project-tile").animate({
               top: "-=100%"
             }, 500);
+          }
+
+          if(event.target.id === "contact") {
+            $("#contact").animate({
+              opacity: "0"
+            }, 250);
+
+            // removes select cursor
+            $('#contact').css("cursor", "default")
+
+            $("#contact-text").animate({
+              opacity: "1"
+            }, 250);
           }
 
 
