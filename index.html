@@ -159,6 +159,21 @@
             z-index: 1;
           }
 
+          .project-subdesc {
+            width: 70%;
+            margin: 0% 7.5%;
+            padding: 5% 5%;
+
+
+            font-family: 'Libre Caslon Text', serif;
+            font-weight: 400;
+            font-size: .8vw;
+            opacity: 0%;
+            cursor: pointer;
+
+            z-index: 1;
+          }
+
           .project-tilebg {
             padding-top: 15%;
             padding-left: 5%;
@@ -201,25 +216,34 @@
 
       <div id="projects-items">
 
-        <div id="project-urbex" class="project-tile" style="left: 0%">
-          Urban Exploration Map
-          <img src="images/urbexmap.png" class="project-img">
-          <div class="project-desc">
-            This is a community-driven map of hidden or otherwise overlooked places in the Pacific Northwest. All locations were submitted and added to the map by members of the Urban Exploration community. The map was previously hosted on zeemaps but due to their predatory pricing, we opted to create a new version from the ground up using leaflet, javascript, and azure for data hosting.
-          </div>
-        </div>
         <div id="project-ski" class="project-tile" style="left: 33%">
           Ski Area Map
           <img src="images/ski.jpg" class="project-img">
           <div class="project-desc">
             I created this map with the intent of creating a tool to assist both experienced and novice skiers in familiarizing themselves with United States ski areas and their relative distances to major cities. Tools included in the web map include sliders to adjust what ski areas are visible, based on both popularity (Wikipedia pageviews), and total vertical drop, a menu to select the basis of circle scaling between popularity and vertical, and a filter to only show cities with a given number of ski areas in a given radius.
           </div>
+          <div class="project-subdesc">
+            Click to see the map, hosted on github pages.
+          </div>
         </div>
-        <div id="project-nfl" class="project-tile" style="right: 0%">
+        <div id="project-nfl" class="project-tile" style="left: 0%">
           NFL Data Analysis
           <img src="images/nfl.jpg" class="project-img">
           <div class="project-desc">
-            In my free time, I have scraped and put together several analyses and data visualizations regarding NFL players, including college representation of players in the Super Bowl, and plots/regressions of NFL players' draft positions and corresponding career value.
+            In my free time, I have scraped and put together several analyses and data visualizations regarding NFL players, including college representation of players in the Super Bowl, and plots of NFL players' draft positions and corresponding career value.
+          </div>
+          <div class="project-subdesc">
+            Click to see my jupyter notebook where I scraped, formatted, and plotted the data.
+          </div>
+        </div>
+        <div id="project-urbex" class="project-tile" style="right: 0%">
+          Urban Exploration Map
+          <img src="images/urbexmap.png" class="project-img">
+          <div class="project-desc">
+            This is a community-driven map of hidden or otherwise overlooked places in the Pacific Northwest. All locations were submitted and added to the map by members of the Urban Exploration community. The map was previously hosted on zeemaps but due to their steep pricing model, we opted to create a new version from the ground up. This was one of my first real undertakings, and I plan on refurbishing it again at some point.
+          </div>
+          <div class="project-subdesc">
+            Click to see the github for the original map. The map is not live right now, but the source code is all public.
           </div>
         </div>
 
@@ -246,7 +270,7 @@
         })
 
         $("#project-nfl").on("click", function() {
-          window.open("https://github.com/corinzarkowski/nfl-draft-value-position", '_blank');
+          window.open("/nfl_analysis.html", '_blank');
         })
 
         // SITE NAV LISTENERS
