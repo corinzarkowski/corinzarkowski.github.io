@@ -1,0 +1,382 @@
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+.title {
+  position: fixed;
+  left: 21.5%;
+
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-size: 3vw;
+  padding: 15%;
+
+  text-align: center;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.title-aboutme {
+  position: fixed;
+  right: 130%;
+
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-size: 3vw;
+  padding: 15%;
+
+  text-align: center;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.menu-options {
+  width: 10%;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  cursor: pointer;
+
+  padding: 1%;
+  margin: 1%;
+
+  border: 1px solid black;
+
+  text-align: center;
+
+  position: fixed;
+  top: 45%;
+
+  transition: opacity .3s;
+}
+
+#resume {
+  left: 27%;
+}
+
+#about {
+  left: 43%;
+}
+
+#projects {
+  left: 59%;
+}
+
+#contact {
+  left: 43%;
+  top: 55%;
+}
+
+.back-options {
+  width: 10%;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  cursor: pointer;
+
+  padding: 1%;
+  margin: 1%;
+
+  border: 1px solid black;
+
+  text-align: center;
+
+  position: fixed;
+  top: 45%;
+
+  transition: opacity .3s;
+
+  background-color: white;
+}
+
+.back-aboutme {
+  width: 10%;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  cursor: pointer;
+
+  padding: 1%;
+  margin: 1%;
+
+  border: 1px solid black;
+
+  text-align: center;
+
+  position: fixed;
+  right: 145%;
+  top: 65%;
+
+  transition: opacity .3s;
+
+  background-color: white;
+}
+
+.menu-options:hover {
+  opacity: 50%;
+}
+
+.back-options:hover {
+  opacity: 50%;
+}
+
+.about-me-text {
+  width: 40%;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  cursor: default;
+  right: 130%;
+
+  padding: 1%;
+  margin: 1%;
+
+  text-align: center;
+
+  position: fixed;
+  top: 40%;
+}
+
+.contact-text {
+  width: 40%;
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  cursor: default;
+
+  padding: 1%;
+  margin: 1%;
+
+  text-align: center;
+
+  position: fixed;
+  left: 28%;
+  top: 55%;
+  opacity: 0;
+
+  z-index: -1;
+}
+
+.project-tile {
+  width: 33%;
+  height: 100%;
+  position: fixed;
+  top: 100%;
+
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7%;
+
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  color: black;
+  cursor: pointer;
+}
+
+.project-img {
+  filter: blur(4px);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  opacity: 0%;
+}
+
+.project-desc {
+  width: 70%;
+  margin: 10% 10%;
+  padding: 5% 5%;
+
+
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: 1vw;
+  opacity: 0%;
+  cursor: pointer;
+
+  z-index: 1;
+}
+
+.project-subdesc {
+  width: 70%;
+  margin: 0% 7.5%;
+  padding: 5% 5%;
+
+
+  font-family: 'Libre Caslon Text', serif;
+  font-weight: 400;
+  font-size: .8vw;
+  opacity: 0%;
+  cursor: pointer;
+
+  z-index: 1;
+}
+
+.project-tilebg {
+  padding-top: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background-color:white;
+}
+
+.linkedin-container {
+  position: fixed;
+  left: 2%;
+  bottom: 3%;
+  width: 2%;
+}
+
+.linkedin-link {
+  position: fixed;
+  left: 2%;
+  bottom: 3%;
+  width: 2%;
+}
+
+/* on portrait devices */
+
+@media (orientation: portrait) {
+  .title {
+    position: fixed;
+    top: 15%;
+    left: -15%;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+
+    text-align: center;
+    cursor: default;
+    overflow-wrap: break-word;
+  }
+
+  .menu-options {
+    width: 20%;
+    height: 6%;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 5vw;
+    cursor: pointer;
+
+
+    border: 1px solid black;
+
+    text-align: center;
+
+    position: fixed;
+    top: 45%;
+
+    transition: opacity .3s;
+  }
+
+  .contact-text {
+    width: 60%;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 5vw;
+    cursor: default;
+
+    text-align: center;
+
+    position: fixed;
+    top: 55%;
+    left: 18%;
+
+    z-index: -1;
+  }
+
+  #resume {
+    left: 13%;
+    top: 40%;
+  }
+
+  #about {
+    left: 38%;
+    top: 40%;
+  }
+
+  #projects {
+    left: 63%;
+    top: 40%;
+  }
+
+  #contact {
+    left: 38%;
+    top: 55%;
+  }
+
+  .linkedin-container {
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+    width: 10%;
+  }
+
+  .linkedin-link {
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+    width: 10%;
+  }
+
+  /* about me page */
+  .title-aboutme {
+    position: fixed;
+    right: 115%;
+    top: 15%;
+
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    padding: 15%;
+
+    text-align: center;
+    cursor: default;
+    white-space: nowrap;
+  }
+
+  .about-me-text {
+    width: 60%;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: default;
+
+    position: fixed;
+    top: 35%;
+    right: 120%;
+
+    text-align: center;
+  }
+
+  .back-aboutme {
+    width: 20%;
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 5vw;
+    cursor: pointer;
+
+    padding: 1%;
+    margin: 1%;
+
+    border: 1px solid black;
+
+    text-align: center;
+
+    position: fixed;
+    right: 140%;
+    top: 75%;
+
+    transition: opacity .3s;
+
+    background-color: white;
+  }
+}

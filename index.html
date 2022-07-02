@@ -8,213 +8,38 @@
         <title>corin's corner</title>
         <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
         <link rel="icon" type="image/png" href="/images/favicon.png">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <script src="js/jquery.js"></script>
-        <style>
-          html {
-            visibility: hidden;
-          }
-
-          a {
-            color: black;
-            text-decoration: none; /* no underline */
-          }
-
-          .title {
-            position: fixed;
-            min-left: 10%;
-
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 700;
-            font-size: 3vw;
-            padding: 15%;
-
-            text-align: center;
-            cursor: default;
-            white-space: nowrap;
-          }
-
-          .menu-options {
-            width: 10%;
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 400;
-            font-size: 1vw;
-            cursor: pointer;
-
-            padding: 1%;
-            margin: 1%;
-
-            border: 1px solid black;
-
-            text-align: center;
-
-            position: fixed;
-            top: 45%;
-
-            transition: opacity .3s;
-          }
-
-          .back-options {
-            width: 10%;
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 400;
-            font-size: 1vw;
-            cursor: pointer;
-
-            padding: 1%;
-            margin: 1%;
-
-            border: 1px solid black;
-
-            text-align: center;
-
-            position: fixed;
-            top: 45%;
-
-            transition: opacity .3s;
-
-            background-color: white;
-          }
-
-          .menu-options:hover {
-            opacity: 50%;
-          }
-
-          .back-options:hover {
-            opacity: 50%;
-          }
-
-          .about-me-text {
-            width: 40%;
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 400;
-            font-size: 1vw;
-            cursor: default;
-
-            padding: 1%;
-            margin: 1%;
-
-            text-align: center;
-
-            position: fixed;
-            top: 40%;
-          }
-
-          .contact-text {
-            width: 40%;
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 400;
-            font-size: 1vw;
-            cursor: default;
-
-            padding: 1%;
-            margin: 1%;
-
-            text-align: center;
-
-            position: fixed;
-            top: 65%;
-
-            z-index: -1;
-          }
-
-          .project-tile {
-            width: 33%;
-            height: 100%;
-            position: fixed;
-            top: 100%;
-
-            margin: 0 auto;
-            text-align: center;
-            padding-top: 7%;
-
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 700;
-            font-size: 1.5vw;
-            color: black;
-            cursor: pointer;
-          }
-
-          .project-img {
-            filter: blur(4px);
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            z-index: -1;
-            opacity: 0%;
-          }
-
-          .project-desc {
-            width: 70%;
-            margin: 10% 10%;
-            padding: 5% 5%;
-
-
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 400;
-            font-size: 1vw;
-            opacity: 0%;
-            cursor: pointer;
-
-            z-index: 1;
-          }
-
-          .project-subdesc {
-            width: 70%;
-            margin: 0% 7.5%;
-            padding: 5% 5%;
-
-
-            font-family: 'Libre Caslon Text', serif;
-            font-weight: 400;
-            font-size: .8vw;
-            opacity: 0%;
-            cursor: pointer;
-
-            z-index: 1;
-          }
-
-          .project-tilebg {
-            padding-top: 15%;
-            padding-left: 5%;
-            padding-right: 5%;
-
-            background-color:white;
-          }
-
-        </style>
     </head>
 
     <body id="page-top">
 
       <!-- MAIN PAGE -->
       <div id="main-page-items">
-        <div id="name" class="title" style="left: 21.5%;">Corin Zarkowski</div>
+        <div id="name" class="title">Corin Zarkowski</div>
 
         <div id="menu-options">
-          <div id="resume" class="menu-options" style="left: 27%">resume</div>
-          <div id="about" class="menu-options" style="left: 43%">about me</div>
-          <div id="projects" class="menu-options" style="left: 59%">projects</div>
-          <div id="contact" class="menu-options" style="left: 43%; top: 55%">contact info</div>
+          <div id="resume" class="menu-options">resume</div>
+          <div id="about" class="menu-options">about me</div>
+          <div id="projects" class="menu-options">projects</div>
+          <div id="contact" class="menu-options">contact info</div>
 
-          <div id="contact-text" class="contact-text" style="left: 28%; top: 55%; opacity: 0"><b>phone: </b>206 719 4525 - <b>email: </b>zarkoc@uw.edu</div>
+          <div id="contact-text" class="contact-text"><b>phone: </b>206 719 4525   <b>email: </b>zarkoc@uw.edu</div>
         </div>
 
       </div>
 
       <!-- ABOUT ME -->
       <div id="about-me-items">
-        <div id="about-me-title" class="title" style="right: 130%">About me</div>
+        <div id="about-me-title" class="title-aboutme">About me</div>
 
-        <div id="about-me-text" class="about-me-text" style="right: 130%">
-          Hi! I am currently a student at the University of Washington-Seattle pursuing a major in GIS: Data Science, and a minor in Informatics. When not working on personal projects in coding and mapping, you can usually find me either skiing or playing video games--two of my favorite hobbies. While I consider myself a proficient programmer and would like to pursue that further, my dream career also involves using and collecting data to solve and explore geographic issues.
+        <div id="about-me-text" class="about-me-text">
+          Hi! I am currently a new graduate from the University of Washington-Seattle with a bachelor's in GIS: Data Science, and a minor in Informatics. When not working on personal projects in coding and mapping, you can usually find me either skiing or playing video games--two of my favorite hobbies. While I consider myself a proficient programmer and would love to pursue that further, my dream career also involves using and collecting data to solve and explore geographic issues.
         </div>
 
-        <div id="about-me-back" class="back-options" style="right: 145%; top: 65%">back</div>
+        <div id="about-me-back" class="back-aboutme">back</div>
 
       </div>
 
@@ -254,24 +79,14 @@
         <div id="projects-back" class="back-options" style="left: 43%; top: 180%">back</div>
       </div>
 
-      <a href="https://www.linkedin.com/in/corin-zarkowski/" style="position: fixed; left: 2%; bottom: 3%; width: 2%;">
-        <img src="images/linkedinglogo.png" style="position: fixed; left: 2%; bottom: 3%; width: 2%;">
+      <a href="https://www.linkedin.com/in/corin-zarkowski/" class="linkedin-container">
+        <img src="images/linkedinglogo.png" class="linkedin-link">
       </a>
 
       <script>
-
-        // DETECT MOBILE
-        $(document).ready(function() {
-          document.getElementsByTagName("html")[0].style.visibility = "visible";
-          if (window.screen.height > window.screen.width) { // TODO: MOBILE STUFF
-            console.log("");
-          }
-        });
-
-
         // RESUME LINK LISTENER
         $("#resume").on("click", function() {
-          window.open("./resume.html", '_blank');
+          window.open("./corin_zarkowski_resume.pdf", '_blank');
         })
 
         // PROJECT LINK LISTENERS
@@ -288,13 +103,12 @@
         })
 
         // SITE NAV LISTENERS
-        $("#about, #projects, #name, .back-options, #contact").on("click", function(event) {
+        $("#about, #projects, #name, .back-options, #contact, .back-aboutme").on("click", function(event) {
           if(event.target.id === "about" || event.target.id === "resume" || event.target.id === "projects") {
             $(".menu-options, #name, #contact-text").animate({
               left: "+=100%"
             }, 500);
           }
-          console.log(event.target.id)
           if(event.target.id === "about-me-back") {
             $("#about, #resume, #projects, #name, #contact, #contact-text").animate({
               left: "-=100%"
@@ -348,7 +162,6 @@
         })
 
         $(".project-tile").on("mouseenter", function(event) {
-          console.log(event);
           $(this).children('img').animate({
             opacity: "+=100%"
           }, 200);
